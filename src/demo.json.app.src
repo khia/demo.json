@@ -1,0 +1,15 @@
+%% -*- erlang -*-
+{application, demo.json,
+ [{description, "demo.json"},
+  {vsn, "0.1"},
+  {modules, [
+	     demo.json.main,
+	     demo.json.app,
+	     demo.json.deps,
+	     demo.json.sup,
+	     demo.json.web
+	    ]},
+  {registered, []},
+  {mod, {'demo.json.app', []}},
+  {env, []},
+  {applications, [kernel, stdlib, crypto]}]}.
